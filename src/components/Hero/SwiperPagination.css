@@ -1,0 +1,68 @@
+.swiper-pagination-bullet {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #000;
+}
+
+/* Default bullet style */
+.custom-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #bebebe;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 4px;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+/* Active bullet style */
+.custom-bullet-active {
+	background-color: #ed553b;
+	padding: 2px;
+	outline: 1px solid #ed553b;
+	outline-offset: 5px; /* Your active color */
+}
+
+.swiper--progress div.drag {
+	background: #3b554a;
+	height: 100%;
+}
+
+.swiper-button-disabled {
+	opacity: 0.3;
+	background: rgb(228, 228, 228) !important;
+	cursor: not-allowed !important;
+	color: #ed553b !important;
+}
+.swiper-button-disabled:hover {
+	background: rgb(228, 228, 228) !important;
+	color: #ed553b !important;
+}
+/* Swiper custom scrollbar */
+.swiper-scrollbar {
+	height: 8px; /* Height of the scrollbar */
+	background-color: #f1f1f1; /* Background color of the track */
+	border-radius: 10px; /* Rounded corners of the track */
+	margin: 10px 0; /* Add some margin to separate the scrollbar from content */
+}
+
+/* Custom scrollbar thumb (draggable part) */
+.swiper-scrollbar-drag {
+	background-color: #ed553b; /* Color of the scrollbar thumb */
+	border-radius: 10px; /* Rounded corners for the thumb */
+	transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on the thumb */
+.swiper-scrollbar-drag:hover {
+	background-color: #ff6f61; /* Thumb color on hover */
+}
+
+/* Hide scrollbar on larger screens */
+@media (min-width: 768px) {
+	.swiper-scrollbar {
+		display: none;
+	}
+}

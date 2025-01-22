@@ -1,0 +1,39 @@
+.bookCard {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bookCardbtn {
+	position: absolute;
+	left: 50%;
+	top: calc(100% + 50px);
+	transform: translate(-50%, -50%);
+	background-color: #ed553b; /* Replace with actual color value */
+	width: 75%;
+	height: 45px;
+	letter-spacing: 14%;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: white;
+	transition: 0.3s;
+}
+.bookCard:hover .overlay{
+	top: 0;
+}
+
+.bookCard:hover .bookCardbtn {
+	bottom: 0;
+	top: 50%;
+}
+
+.bookCardbtn:hover{
+  background-color: #f43f1f;
+}

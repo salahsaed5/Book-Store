@@ -1,0 +1,19 @@
+/* Default bullet style */
+.custom-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #bebebe;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 8px;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+/* Active bullet style */
+.custom-bullet-active {
+	background-color: #ed553b;
+	padding: 2px;
+	outline: 1px solid #ed553b;
+	outline-offset: 8px; /* Your active color */
+}
